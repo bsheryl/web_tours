@@ -6,7 +6,7 @@ WebTours
 Запуск
 ------
 ```
-https://github.com/bsheryl/web_tours.git
+git clone https://github.com/bsheryl/web_tours.git
 cd web_tours
 docker-compose up -d
 ```

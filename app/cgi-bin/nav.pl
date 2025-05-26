@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 # $Id: nav.pl,v 1.2 2007-05-08 15:40:18 adish Exp $ [MISCCSID]
 
 #

@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 # $Id: itinerary.pl,v 1.3 2007-05-08 15:40:17 adish Exp $ [MISCCSID]
 
 #

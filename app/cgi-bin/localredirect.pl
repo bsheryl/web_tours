@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 # $Id: localredirect.pl,v 1.1 2004-10-26 12:18:01 evgenyk Exp $ [MISCCSID]
 
 use Carp::Always;

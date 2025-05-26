@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 ##
 ##  printenv -- demo CGI program which just prints its environment
 ##

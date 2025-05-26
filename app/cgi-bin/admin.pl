@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 # $Id: admin.pl,v 1.3 2007-05-08 15:40:15 adish Exp $ [MISCCSID]
 
 

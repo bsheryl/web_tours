@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 # $Id: login.pl,v 1.4 2008-04-17 11:32:24 aainbinder Exp $ [MISCCSID]
 
 use Carp::Always;
@@ -43,7 +43,8 @@ elsif (param('getInfo')) {
 }
 
 # make sure that the userSession value is valid.
-elsif ((!param('userSession')) || ($Lchecksum != param('userSession')) ) {
+#elsif ((!param('userSession')) || ($Lchecksum != param('userSession')) ) {
+elsif ((!param('userSession')) || ($Lchecksum ne param('userSession')) ) {
 	doBadAccess();
 }
 
@@ -171,7 +172,6 @@ sub doLogin {
 	# updated by Leonid Pekel on 16.04.2008
 	$username = param('username');
 	$username =~ s/[^A-Za-z0-9]*//g;
-	#
 
 	if ((param('password')) &&
 		(param('password') eq userPassword($username))) {
@@ -245,6 +245,7 @@ sub userPassword {
     open (ACCOUNT, "<$name") or die "Couldn't open";
     $pass = <ACCOUNT>;
     chomp($pass);
+    $pass =~ s/\r$//;
 
     #read in default information.
 
